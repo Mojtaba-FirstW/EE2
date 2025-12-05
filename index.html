@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KhatKhati | Doodle Finance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Vazirmatn', 'sans-serif'],
+              display: ['Vazirmatn', 'sans-serif'], // Mapped to Vazirmatn for consistency
+              hand: ['Vazirmatn', 'sans-serif'],    // Mapped to Vazirmatn for consistency
+            },
+            colors: {
+              paper: '#fffdf5',
+              ink: '#1a1a1a',
+              'marker-yellow': '#fde047',
+              'marker-blue': '#67e8f9',
+              'marker-green': '#86efac',
+              'marker-pink': '#f9a8d4',
+              'marker-purple': '#d8b4fe',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Vazirmatn', sans-serif;
+        background-color: #fffdf5;
+        color: #1a1a1a;
+        /* Graph paper pattern */
+        background-image: 
+          linear-gradient(#e5e7eb 1px, transparent 1px),
+          linear-gradient(90deg, #e5e7eb 1px, transparent 1px);
+        background-size: 20px 20px;
+      }
+
+      /* Doodle Card Style */
+      .doodle-card {
+        background: white;
+        border: 3px solid #1a1a1a;
+        border-radius: 12px;
+        box-shadow: 6px 6px 0px 0px #1a1a1a;
+        transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+      }
+      
+      .doodle-card:hover {
+        transform: translate(-2px, -2px);
+        box-shadow: 8px 8px 0px 0px #1a1a1a;
+      }
+
+      /* Doodle Button */
+      .doodle-btn {
+        border: 3px solid #1a1a1a;
+        box-shadow: 4px 4px 0px 0px #1a1a1a;
+        transition: all 0.1s;
+      }
+      .doodle-btn:active {
+        transform: translate(4px, 4px);
+        box-shadow: 0px 0px 0px 0px #1a1a1a;
+      }
+
+      /* Scrollbar */
+      ::-webkit-scrollbar {
+        width: 12px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-left: 2px solid #000;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #000;
+        border-radius: 10px;
+        border: 2px solid #fff;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react-markdown": "https://aistudiocdn.com/react-markdown@^10.1.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
